@@ -1,5 +1,5 @@
 ﻿
-namespace  MystatWebPage
+namespace WindowsFormsApp7
 
 {
     partial class Form1
