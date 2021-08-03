@@ -10,3 +10,15 @@ C:\Users\Asus Rog Strix G17\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\D
 C:\Users\Asus Rog Strix G17\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\MystatWebPage.csproj.CopyComplete
 C:\Users\Asus Rog Strix G17\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
 C:\Users\Asus Rog Strix G17\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\MystatWebPage.csproj.AssemblyReference.cache
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form1.resources
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Properties.Resources.resources
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\MystatWebPage.csproj.GenerateResource.cache
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\MystatWebPage.csproj.CoreCompileInputs.cache
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe.config
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.pdb
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\bin\Debug\Guna.UI2.dll
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\MystatWebPage.csproj.CopyComplete
