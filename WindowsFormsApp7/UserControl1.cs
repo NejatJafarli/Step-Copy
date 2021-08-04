@@ -12,11 +12,32 @@ namespace WindowsFormsApp7
 {
     public partial class UserControl1 : UserControl
     {
-        public UserControl1()
+        public UserControl1(string nameSurname, string counter, string enteredMyStat)
         {
             InitializeComponent();
             lblDiamondCount = new Label();
+            NameSurname = nameSurname;
+            Counter = counter;
+            EnteredMyStat = enteredMyStat;
         }
+
+        public string  NameSurname
+        {
+            get { return lblName.Text; }
+            set { lblName.Text = value; }
+        }
+        public string Counter
+        {
+            get { return lblCounter.Text; }
+            set { lblCounter.Text = value; }
+        }
+        public string EnteredMyStat
+        {
+            get { return lblEnteredMystat.Text; }
+            set { lblEnteredMystat.Text = value; }
+        }
+
+
         public Label lblDiamondCount { get; set; }
 
         private void label12_Click(object sender, EventArgs e)
@@ -36,7 +57,7 @@ namespace WindowsFormsApp7
         public bool DiamondBtn3 { get; set; } = false;
         private void Diamond1_Click(object sender, EventArgs e)
         {
-            lblDiamondCount.Text = Tag as string;
+            lblDiamondCount.Text = Form1.ActiveForm.Tag as string;
             if (RadioButtonRed.Checked == false)
                 if (DiamondBtn3 || DiamondBtn2)
                 {
@@ -74,11 +95,11 @@ namespace WindowsFormsApp7
                     Diamond3.Image = Properties.Resources.blackDiamond;
                     lblDiamondCount.Text = $"{Convert.ToInt32(lblDiamondCount.Text) - 1}";
                 }
-            Tag = lblDiamondCount.Text;
+            Form1.ActiveForm.Tag = lblDiamondCount.Text;
         }
         private void Diamond2_Click(object sender, EventArgs e)
         {
-            lblDiamondCount.Text = Tag as string;
+            lblDiamondCount.Text = Form1.ActiveForm.Tag as string;
             if (RadioButtonRed.Checked == false)
 
 
@@ -91,7 +112,7 @@ namespace WindowsFormsApp7
                     lblDiamondCount.Text = $"{Convert.ToInt32(lblDiamondCount.Text) + 1}";
                     DiamondBtn3 = false;
                 }
-                else if (DiamondBtn1)
+                else if (DiamondBtn1&& Convert.ToInt32(lblDiamondCount.Text) - 1>=0)
                 {
                     DiamondBtn2 = true;
                     Diamond1.Image = Properties.Resources.diamond;
@@ -108,16 +129,17 @@ namespace WindowsFormsApp7
                     Diamond3.Image = Properties.Resources.blackDiamond;
                     lblDiamondCount.Text = $"{Convert.ToInt32(lblDiamondCount.Text) - 2}";
                 }
-            Tag = lblDiamondCount.Text;
+            Form1.ActiveForm.Tag = lblDiamondCount.Text;
 
         }
 
         private void Diamond3_Click(object sender, EventArgs e)
         {
-            lblDiamondCount.Text = Tag as string;
+             
+            lblDiamondCount.Text = Form1.ActiveForm.Tag as string;
             if (RadioButtonRed.Checked == false)
 
-                 if (DiamondBtn2)
+                 if (DiamondBtn2&& Convert.ToInt32(lblDiamondCount.Text) - 1>=0)
                 {
                     DiamondBtn3 = true;
                     DiamondBtn1 = true;
@@ -126,7 +148,7 @@ namespace WindowsFormsApp7
                     Diamond3.Image = Properties.Resources.diamond;
                     lblDiamondCount.Text = $"{Convert.ToInt32(lblDiamondCount.Text) - 1}";
                 }
-                else if (DiamondBtn1)
+                else if (DiamondBtn1&& Convert.ToInt32(lblDiamondCount.Text) - 2>=0)
                 {
                     DiamondBtn2 = true;
                     DiamondBtn3 = true;
@@ -145,11 +167,11 @@ namespace WindowsFormsApp7
                     Diamond2.Image = Properties.Resources.diamond;
                     Diamond3.Image = Properties.Resources.diamond;
                 }
-            Tag = lblDiamondCount.Text;
+            Form1.ActiveForm.Tag = lblDiamondCount.Text;
         }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            lblDiamondCount.Text = Tag as string;
+            lblDiamondCount.Text = Form1.ActiveForm.Tag as string;
             if (DiamondBtn1)
                 lblDiamondCount.Text = $"{Convert.ToInt32(lblDiamondCount.Text) + 1}";
             if (DiamondBtn2)
@@ -162,7 +184,8 @@ namespace WindowsFormsApp7
             Diamond1.Image = Properties.Resources.blackDiamond;
             Diamond2.Image = Properties.Resources.blackDiamond;
             Diamond3.Image = Properties.Resources.blackDiamond;
-            Tag = lblDiamondCount.Text;
+            Form1.ActiveForm.Tag = lblDiamondCount.Text;
+
         }
 
 

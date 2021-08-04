@@ -39,10 +39,10 @@ namespace WindowsFormsApp7
             this.guna2RadioButton3 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.RadioButtonRed = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblEnteredMystat = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblCounter = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond3)).BeginInit();
@@ -64,10 +64,10 @@ namespace WindowsFormsApp7
             this.guna2Panel4.Controls.Add(this.guna2RadioButton3);
             this.guna2Panel4.Controls.Add(this.RadioButtonRed);
             this.guna2Panel4.Controls.Add(this.guna2ComboBox1);
-            this.guna2Panel4.Controls.Add(this.label14);
+            this.guna2Panel4.Controls.Add(this.lblEnteredMystat);
             this.guna2Panel4.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2Panel4.Controls.Add(this.label13);
-            this.guna2Panel4.Controls.Add(this.label12);
+            this.guna2Panel4.Controls.Add(this.lblCounter);
+            this.guna2Panel4.Controls.Add(this.lblName);
             this.guna2Panel4.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(218)))), ((int)(((byte)(242)))));
             this.guna2Panel4.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -297,16 +297,16 @@ namespace WindowsFormsApp7
             this.guna2ComboBox1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
-            // label14
+            // lblEnteredMystat
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.label14.Location = new System.Drawing.Point(284, 25);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 15);
-            this.label14.TabIndex = 19;
-            this.label14.Text = "01.08.21";
+            this.lblEnteredMystat.AutoSize = true;
+            this.lblEnteredMystat.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnteredMystat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.lblEnteredMystat.Location = new System.Drawing.Point(284, 25);
+            this.lblEnteredMystat.Name = "lblEnteredMystat";
+            this.lblEnteredMystat.Size = new System.Drawing.Size(119, 15);
+            this.lblEnteredMystat.TabIndex = 19;
+            this.lblEnteredMystat.Text = "Entered my stat";
             // 
             // guna2CirclePictureBox1
             // 
@@ -320,27 +320,27 @@ namespace WindowsFormsApp7
             this.guna2CirclePictureBox1.TabIndex = 18;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // label13
+            // lblCounter
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Lucida Sans", 16F);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.label13.Location = new System.Drawing.Point(3, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 25);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "1";
+            this.lblCounter.AutoSize = true;
+            this.lblCounter.Font = new System.Drawing.Font("Lucida Sans", 16F);
+            this.lblCounter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.lblCounter.Location = new System.Drawing.Point(3, 18);
+            this.lblCounter.Name = "lblCounter";
+            this.lblCounter.Size = new System.Drawing.Size(26, 25);
+            this.lblCounter.TabIndex = 18;
+            this.lblCounter.Text = "1";
             // 
-            // label12
+            // lblName
             // 
-            this.label12.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.label12.Location = new System.Drawing.Point(62, 25);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(166, 19);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Ceferli Nicat Rasim";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.lblName.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.lblName.Location = new System.Drawing.Point(62, 25);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(166, 19);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name Surname";
+            this.lblName.Click += new System.EventHandler(this.label12_Click);
             // 
             // UserControl1
             // 
@@ -374,9 +374,9 @@ namespace WindowsFormsApp7
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton3;
         private Guna.UI2.WinForms.Guna2RadioButton RadioButtonRed;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblEnteredMystat;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblCounter;
+        private System.Windows.Forms.Label lblName;
     }
 }

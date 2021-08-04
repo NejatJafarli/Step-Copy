@@ -22,3 +22,4 @@ C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\bin\Debug\Wi
 C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\bin\Debug\Guna.UI2.dll
 C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\MystatWebPage.csproj.CopyComplete
 C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.UserControl1.resources
+C:\Users\Asus Rog Strix G17\Source\Repos\Step-Copy\WindowsFormsApp7\obj\Debug\MystatWebPage.csproj.AssemblyReference.cache

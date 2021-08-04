@@ -12,10 +12,10 @@ namespace WindowsFormsApp7
 {
     public partial class Form1 : Form
     {
+        public List<UserControl> users = new List<UserControl>();
         public Form1()
         {
             InitializeComponent();
-
         }
         public bool IsTrue { get; set; } = true;
         private void PictureBoxPencil_Click(object sender, EventArgs e)
@@ -36,9 +36,18 @@ namespace WindowsFormsApp7
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            panelChangeLessonText.Visible = false;
-            userControl11.Tag = $"{lblDiamondCount.Text}";
+            users.Add(new UserControl1("Nicat Ceferli Rasim", "1", "02.08.21"));
+            users.Add(new UserControl1("Elkiyev Emiraslan Isa", "2", "02.08.21"));
+            this.Tag = $"{lblDiamondCount.Text}";
+            for (int i = 0; i < users.Count; i++)
+            {
+                this.Controls.Add(users[i]);
+                PanelUsers.Controls.Add(users[i]);
+                users[i].Dock = DockStyle.Top;
+                users[i].BringToFront();
+            }
             timer1.Start();
+            panelChangeLessonText.Visible = false;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -78,7 +87,7 @@ namespace WindowsFormsApp7
         {
             MessageBox.Show("Elave Olundu");
         }
-       
+
 
 
 
@@ -88,13 +97,17 @@ namespace WindowsFormsApp7
 
         private void userControl11_Click(object sender, EventArgs e)
         {
-            userControl11.Tag = $"{lblDiamondCount.Text}";
-
+            this.Tag = $"{lblDiamondCount.Text}";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lblDiamondCount.Text = userControl11.Tag as string;
+            lblDiamondCount.Text =Tag as string;
+        }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

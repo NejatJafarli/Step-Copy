@@ -48,7 +48,6 @@ namespace WindowsFormsApp7
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.PanelUsers = new Guna.UI2.WinForms.Guna2Panel();
-            this.userControl11 = new WindowsFormsApp7.UserControl1();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,7 +59,6 @@ namespace WindowsFormsApp7
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.PictureBoxPencil = new System.Windows.Forms.PictureBox();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             this.panelDragControl.SuspendLayout();
@@ -333,7 +331,6 @@ namespace WindowsFormsApp7
             // PanelUsers
             // 
             this.PanelUsers.BackColor = System.Drawing.Color.Transparent;
-            this.PanelUsers.Controls.Add(this.userControl11);
             this.PanelUsers.Controls.Add(this.guna2Panel3);
             this.PanelUsers.Enabled = false;
             this.PanelUsers.Location = new System.Drawing.Point(126, 70);
@@ -341,18 +338,6 @@ namespace WindowsFormsApp7
             this.PanelUsers.ShadowDecoration.Parent = this.PanelUsers;
             this.PanelUsers.Size = new System.Drawing.Size(1300, 384);
             this.PanelUsers.TabIndex = 15;
-            // 
-            // userControl11
-            // 
-            this.userControl11.DiamondBtn1 = false;
-            this.userControl11.DiamondBtn2 = false;
-            this.userControl11.DiamondBtn3 = false;
-            this.userControl11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.userControl11.Location = new System.Drawing.Point(0, 66);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(1300, 66);
-            this.userControl11.TabIndex = 1;
-            this.userControl11.Click += new System.EventHandler(this.userControl11_Click);
             // 
             // guna2Panel3
             // 
@@ -558,8 +543,6 @@ namespace WindowsFormsApp7
         private System.Windows.Forms.Label lblDiamondCount;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private UserControl1 userControl11;
         private System.Windows.Forms.Timer timer1;
     }
 }
