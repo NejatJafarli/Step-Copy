@@ -63,6 +63,7 @@ namespace WindowsFormsApp7
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblDiamondCount = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -351,6 +352,7 @@ namespace WindowsFormsApp7
             this.PanelUsers.BackColor = System.Drawing.Color.Transparent;
             this.PanelUsers.Controls.Add(this.guna2Panel4);
             this.PanelUsers.Controls.Add(this.guna2Panel3);
+            this.PanelUsers.Enabled = false;
             this.PanelUsers.Location = new System.Drawing.Point(126, 70);
             this.PanelUsers.Name = "PanelUsers";
             this.PanelUsers.ShadowDecoration.Parent = this.PanelUsers;
@@ -378,7 +380,6 @@ namespace WindowsFormsApp7
             this.guna2Panel4.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(218)))), ((int)(((byte)(242)))));
             this.guna2Panel4.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel4.Enabled = false;
             this.guna2Panel4.FillColor = System.Drawing.Color.Transparent;
             this.guna2Panel4.Location = new System.Drawing.Point(0, 66);
             this.guna2Panel4.Name = "guna2Panel4";
@@ -653,6 +654,7 @@ namespace WindowsFormsApp7
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Panel3.Controls.Add(this.label7);
             this.guna2Panel3.Controls.Add(this.pictureBox1);
             this.guna2Panel3.Controls.Add(this.lblDiamondCount);
             this.guna2Panel3.Controls.Add(this.label6);
@@ -664,13 +666,23 @@ namespace WindowsFormsApp7
             this.guna2Panel3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(218)))), ((int)(((byte)(242)))));
             this.guna2Panel3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Enabled = false;
             this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(1300, 66);
             this.guna2Panel3.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.label7.Location = new System.Drawing.Point(1095, 25);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(33, 15);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Rey";
             // 
             // pictureBox1
             // 
@@ -856,6 +868,7 @@ namespace WindowsFormsApp7
         private System.Windows.Forms.PictureBox Diamond3;
         private System.Windows.Forms.PictureBox Diamond2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label7;
     }
 }
 

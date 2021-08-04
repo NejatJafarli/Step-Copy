@@ -73,8 +73,7 @@ namespace WindowsFormsApp7
         private void RadioButtonTwo_CheckedChanged(object sender, EventArgs e)
         {
             EnteredTeacher = true;
-            guna2Panel4.Enabled = true;
-            guna2Panel3.Enabled = true;
+            PanelUsers.Enabled = true;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
