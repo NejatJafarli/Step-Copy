@@ -12,7 +12,7 @@ namespace WindowsFormsApp7
 {
     public partial class Form1 : Form
     {
-        public List<UserControl> users = new List<UserControl>();
+        public List<UserControl1> users = new List<UserControl1>();
         public Form1()
         {
             InitializeComponent();
@@ -37,7 +37,13 @@ namespace WindowsFormsApp7
         private void Form1_Load(object sender, EventArgs e)
         {
             users.Add(new UserControl1("Nicat Ceferli Rasim", "1", "02.08.21"));
-            users.Add(new UserControl1("Elkiyev Emiraslan Isa", "2", "02.08.21"));
+            users.Add(new UserControl1("Eliyev Emiraslan Isa", "2", "02.08.21"));
+            users.Add(new UserControl1("Hesenzade Ilqar Ilham", "3", "02.08.21"));
+            users.Add(new UserControl1("Idayatov Kenan Ilqar", "4", "02.08.21"));
+            users.Add(new UserControl1("Nebili Nebi Elcin", "5", "02.08.21"));
+            users.Add(new UserControl1("Rustamov Yusif Habid", "6", "26.07.21"));
+            users.Add(new UserControl1("Vahabzade Zahid Yusif", "7", "02.08.21"));
+            users.Add(new UserControl1("Velizade Emin Elnur", "8", "02.08.21"));
             this.Tag = $"{lblDiamondCount.Text}";
             for (int i = 0; i < users.Count; i++)
             {
@@ -102,12 +108,24 @@ namespace WindowsFormsApp7
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lblDiamondCount.Text =Tag as string;
+            lblDiamondCount.Text = Tag as string;
         }
 
         private void userControl11_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (guna2RadioButton1.Checked)
+            {
+                guna2RadioButton1.Checked = false;
+                for (int i = 0; i < users.Count; i++)
+                {
+                    users[i].AllStudentCome();
+                }
+            }
         }
     }
 }

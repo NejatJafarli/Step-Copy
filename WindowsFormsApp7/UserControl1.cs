@@ -12,6 +12,11 @@ namespace WindowsFormsApp7
 {
     public partial class UserControl1 : UserControl
     {
+        public void AllStudentCome()
+        {
+            RadioButtonRed.Checked = false;
+            guna2RadioButton3.Checked = true;
+        }
         public UserControl1(string nameSurname, string counter, string enteredMyStat)
         {
             InitializeComponent();
@@ -21,7 +26,7 @@ namespace WindowsFormsApp7
             EnteredMyStat = enteredMyStat;
         }
 
-        public string  NameSurname
+        public string NameSurname
         {
             get { return lblName.Text; }
             set { lblName.Text = value; }
@@ -50,6 +55,13 @@ namespace WindowsFormsApp7
             {
                 guna2ComboBox1.Enabled = true;
                 guna2ComboBox2.Enabled = true;
+            }
+            else
+            {
+
+                guna2ComboBox1.Enabled = false;
+                guna2ComboBox2.Enabled = false;
+                pictureBox2_Click(null, null);
             }
         }
         public bool DiamondBtn1 { get; set; } = false;
@@ -112,7 +124,7 @@ namespace WindowsFormsApp7
                     lblDiamondCount.Text = $"{Convert.ToInt32(lblDiamondCount.Text) + 1}";
                     DiamondBtn3 = false;
                 }
-                else if (DiamondBtn1&& Convert.ToInt32(lblDiamondCount.Text) - 1>=0)
+                else if (DiamondBtn1 && Convert.ToInt32(lblDiamondCount.Text) - 1 >= 0)
                 {
                     DiamondBtn2 = true;
                     Diamond1.Image = Properties.Resources.diamond;
@@ -135,11 +147,11 @@ namespace WindowsFormsApp7
 
         private void Diamond3_Click(object sender, EventArgs e)
         {
-             
+
             lblDiamondCount.Text = Form1.ActiveForm.Tag as string;
             if (RadioButtonRed.Checked == false)
 
-                 if (DiamondBtn2&& Convert.ToInt32(lblDiamondCount.Text) - 1>=0)
+                if (DiamondBtn2 && Convert.ToInt32(lblDiamondCount.Text) - 1 >= 0)
                 {
                     DiamondBtn3 = true;
                     DiamondBtn1 = true;
@@ -148,7 +160,7 @@ namespace WindowsFormsApp7
                     Diamond3.Image = Properties.Resources.diamond;
                     lblDiamondCount.Text = $"{Convert.ToInt32(lblDiamondCount.Text) - 1}";
                 }
-                else if (DiamondBtn1&& Convert.ToInt32(lblDiamondCount.Text) - 2>=0)
+                else if (DiamondBtn1 && Convert.ToInt32(lblDiamondCount.Text) - 2 >= 0)
                 {
                     DiamondBtn2 = true;
                     DiamondBtn3 = true;
@@ -213,6 +225,31 @@ namespace WindowsFormsApp7
         private void UserControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Size = new Size(this.Size.Width, this.Size.Height + 54);
+            UserPanel.Size = this.Size;
+            pictureBox1.Visible = false;
+            lblEnteredMystat.Location = new Point(lblEnteredMystat.Location.X - 50, lblEnteredMystat.Location.Y);
+            guna2RadioButton3.Location = new Point(guna2RadioButton3.Location.X - 50, guna2RadioButton3.Location.Y);
+            guna2RadioButton2.Location = new Point(guna2RadioButton2.Location.X - 50, guna2RadioButton2.Location.Y);
+            RadioButtonRed.Location = new Point(RadioButtonRed.Location.X - 50, RadioButtonRed.Location.Y);
+            guna2ComboBox1.Location = new Point(guna2ComboBox1.Location.X - 50, guna2ComboBox1.Location.Y);
+            guna2ComboBox2.Location = new Point(guna2ComboBox2.Location.X - 50, guna2ComboBox2.Location.Y);
+
+            Diamond1.Location = new Point(Diamond1.Location.X - 50, Diamond1.Location.Y);
+            Diamond2.Location = new Point(Diamond2.Location.X - 50, Diamond2.Location.Y);
+            Diamond3.Location = new Point(Diamond3.Location.X - 50, Diamond3.Location.Y);
+
+            pictureBox2.Location = new Point(pictureBox2.Location.X - 50, pictureBox2.Location.Y);
+
+            txtComment.Visible = true;
+            txtComment.BringToFront();
+            lblRey.Visible = true;
+            btnSave.Visible = true;
+            btnCancel.Visible = true;
         }
     }
 }

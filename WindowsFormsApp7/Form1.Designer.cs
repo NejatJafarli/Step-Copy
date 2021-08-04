@@ -80,7 +80,7 @@ namespace WindowsFormsApp7
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1529, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1552, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
@@ -97,7 +97,7 @@ namespace WindowsFormsApp7
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1481, 0);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1504, 0);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(0);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
@@ -272,7 +272,7 @@ namespace WindowsFormsApp7
             this.panelDragControl.Location = new System.Drawing.Point(0, 0);
             this.panelDragControl.Name = "panelDragControl";
             this.panelDragControl.ShadowDecoration.Parent = this.panelDragControl;
-            this.panelDragControl.Size = new System.Drawing.Size(1577, 29);
+            this.panelDragControl.Size = new System.Drawing.Size(1600, 29);
             this.panelDragControl.TabIndex = 4;
             // 
             // guna2DragControl1
@@ -292,6 +292,7 @@ namespace WindowsFormsApp7
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.AutoScroll = true;
             this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
             this.guna2Panel2.BorderRadius = 7;
             this.guna2Panel2.BorderThickness = 2;
@@ -306,7 +307,7 @@ namespace WindowsFormsApp7
             this.guna2Panel2.Location = new System.Drawing.Point(20, 35);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1545, 567);
+            this.guna2Panel2.Size = new System.Drawing.Size(1545, 700);
             this.guna2Panel2.TabIndex = 15;
             // 
             // guna2Button1
@@ -330,13 +331,15 @@ namespace WindowsFormsApp7
             // 
             // PanelUsers
             // 
+            this.PanelUsers.AutoScroll = true;
+            this.PanelUsers.AutoSize = true;
             this.PanelUsers.BackColor = System.Drawing.Color.Transparent;
             this.PanelUsers.Controls.Add(this.guna2Panel3);
             this.PanelUsers.Enabled = false;
             this.PanelUsers.Location = new System.Drawing.Point(126, 70);
             this.PanelUsers.Name = "PanelUsers";
             this.PanelUsers.ShadowDecoration.Parent = this.PanelUsers;
-            this.PanelUsers.Size = new System.Drawing.Size(1300, 384);
+            this.PanelUsers.Size = new System.Drawing.Size(1300, 563);
             this.PanelUsers.TabIndex = 15;
             // 
             // guna2Panel3
@@ -438,6 +441,7 @@ namespace WindowsFormsApp7
             this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
             this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton1.CheckedChanged += new System.EventHandler(this.guna2RadioButton1_CheckedChanged);
             // 
             // label4
             // 
@@ -491,7 +495,8 @@ namespace WindowsFormsApp7
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1577, 837);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1600, 750);
             this.Controls.Add(this.panelDragControl);
             this.Controls.Add(this.guna2Panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
