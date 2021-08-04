@@ -48,6 +48,7 @@ namespace WindowsFormsApp7
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.txtComment = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblDateTime = new System.Windows.Forms.Label();
             this.UserPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -61,6 +62,7 @@ namespace WindowsFormsApp7
             // 
             this.UserPanel.BackColor = System.Drawing.Color.Transparent;
             this.UserPanel.BorderColor = System.Drawing.Color.Transparent;
+            this.UserPanel.Controls.Add(this.lblDateTime);
             this.UserPanel.Controls.Add(this.btnCancel);
             this.UserPanel.Controls.Add(this.lblRey);
             this.UserPanel.Controls.Add(this.btnSave);
@@ -295,7 +297,7 @@ namespace WindowsFormsApp7
             this.lblRey.AutoSize = true;
             this.lblRey.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRey.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblRey.Location = new System.Drawing.Point(988, 50);
+            this.lblRey.Location = new System.Drawing.Point(975, -1);
             this.lblRey.Name = "lblRey";
             this.lblRey.Size = new System.Drawing.Size(33, 15);
             this.lblRey.TabIndex = 28;
@@ -392,6 +394,7 @@ namespace WindowsFormsApp7
             this.btnCancel.TabIndex = 21;
             this.btnCancel.Text = "Imtina Etmek";
             this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -411,6 +414,7 @@ namespace WindowsFormsApp7
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "Rey Yazmaq";
             this.btnSave.Visible = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtComment
             // 
@@ -440,6 +444,21 @@ namespace WindowsFormsApp7
             this.txtComment.Size = new System.Drawing.Size(292, 69);
             this.txtComment.TabIndex = 30;
             this.txtComment.Visible = false;
+            // 
+            // lblDateTime
+            // 
+            this.lblDateTime.AutoSize = true;
+            this.lblDateTime.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblDateTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.lblDateTime.Location = new System.Drawing.Point(1022, 0);
+            this.lblDateTime.Name = "lblDateTime";
+            this.lblDateTime.Size = new System.Drawing.Size(71, 20);
+            this.lblDateTime.TabIndex = 31;
+            this.lblDateTime.Text = "04/08/21";
+            this.lblDateTime.Visible = false;
+            this.lblDateTime.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // UserControl1
             // 
@@ -483,5 +502,6 @@ namespace WindowsFormsApp7
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2Button btnSave;
         private Guna.UI2.WinForms.Guna2TextBox txtComment;
+        private System.Windows.Forms.Label lblDateTime;
     }
 }
