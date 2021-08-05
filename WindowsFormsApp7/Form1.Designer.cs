@@ -378,7 +378,7 @@ namespace WindowsFormsApp7
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Image = global::WindowsFormsApp7.Properties.Resources.diamond;
             this.pictureBox1.Location = new System.Drawing.Point(966, 18);
             this.pictureBox1.Name = "pictureBox1";

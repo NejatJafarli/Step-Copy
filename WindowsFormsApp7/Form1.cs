@@ -61,7 +61,13 @@ namespace WindowsFormsApp7
             PanelUsers.Location = new Point(126, 73);
             guna2Button1.Location = new Point(1117, 30);
             panelChangeLessonText.Visible = false;
+            List<int> RadioButtons=new List<int>();
+            for (int i = 0; i < users.Count; i++)
+                RadioButtons.Add(users[i].SaveRadioButtonStepOne());
+
             panelChangeLessonText.Enabled = false;
+            for (int i = 0; i < users.Count; i++)
+                users[i].SaveRadioButtonStepTwo(RadioButtons[i]);
             lblLessonText.Visible = true;
             lblLessonText.Text = txtLesson.Text;
             txtLesson.Text = "";
@@ -73,6 +79,10 @@ namespace WindowsFormsApp7
         {
             PanelUsers.Location = new Point(126, 73);
             guna2Button1.Location = new Point(1117, 30);
+            List<int> RadioButtons = new List<int>();
+
+            for (int i = 0; i < users.Count; i++)
+                RadioButtons.Add(users[i].SaveRadioButtonStepOne());
 
             panelChangeLessonText.Visible = false;
             panelChangeLessonText.Enabled = false;
@@ -80,6 +90,8 @@ namespace WindowsFormsApp7
             txtLesson.Text = "";
             IsTrue = true;
             PictureBoxPencil.Location = new Point(PictureBoxPencil.Location.X + lblLessonText.Size.Width, PictureBoxPencil.Location.Y);
+            for (int i = 0; i < users.Count; i++)
+                users[i].SaveRadioButtonStepTwo(RadioButtons[i]);
         }
 
         public bool EnteredTeacher { get; set; } = false;

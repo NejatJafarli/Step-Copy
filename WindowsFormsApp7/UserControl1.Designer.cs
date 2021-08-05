@@ -30,28 +30,28 @@ namespace WindowsFormsApp7
         private void InitializeComponent()
         {
             this.UserPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblDateTime = new System.Windows.Forms.Label();
+            this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
+            this.lblRey = new System.Windows.Forms.Label();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Diamond3 = new System.Windows.Forms.PictureBox();
+            this.Diamond2 = new System.Windows.Forms.PictureBox();
+            this.Diamond1 = new System.Windows.Forms.PictureBox();
             this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2RadioButton3 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.RadioButtonRed = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblEnteredMystat = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblCounter = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.lblRey = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Diamond3 = new System.Windows.Forms.PictureBox();
-            this.Diamond2 = new System.Windows.Forms.PictureBox();
-            this.Diamond1 = new System.Windows.Forms.PictureBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.txtComment = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblDateTime = new System.Windows.Forms.Label();
             this.UserPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond1)).BeginInit();
@@ -90,6 +90,132 @@ namespace WindowsFormsApp7
             this.UserPanel.ShadowDecoration.Parent = this.UserPanel;
             this.UserPanel.Size = new System.Drawing.Size(1300, 66);
             this.UserPanel.TabIndex = 18;
+            // 
+            // lblDateTime
+            // 
+            this.lblDateTime.AutoSize = true;
+            this.lblDateTime.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblDateTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.lblDateTime.Location = new System.Drawing.Point(1022, 0);
+            this.lblDateTime.Name = "lblDateTime";
+            this.lblDateTime.Size = new System.Drawing.Size(0, 20);
+            this.lblDateTime.TabIndex = 31;
+            this.lblDateTime.Visible = false;
+            this.lblDateTime.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Animated = true;
+            this.btnCancel.BorderRadius = 12;
+            this.btnCancel.CheckedState.Parent = this.btnCancel;
+            this.btnCancel.CustomImages.Parent = this.btnCancel;
+            this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(137)))), ((int)(((byte)(210)))));
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.btnCancel.HoverState.Parent = this.btnCancel;
+            this.btnCancel.Location = new System.Drawing.Point(1134, 86);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
+            this.btnCancel.Size = new System.Drawing.Size(136, 28);
+            this.btnCancel.TabIndex = 21;
+            this.btnCancel.Text = "Imtina Etmek";
+            this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // lblRey
+            // 
+            this.lblRey.AutoSize = true;
+            this.lblRey.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRey.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.lblRey.Location = new System.Drawing.Point(975, -1);
+            this.lblRey.Name = "lblRey";
+            this.lblRey.Size = new System.Drawing.Size(33, 15);
+            this.lblRey.TabIndex = 28;
+            this.lblRey.Text = "Rey";
+            this.lblRey.Visible = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Animated = true;
+            this.btnSave.BorderRadius = 12;
+            this.btnSave.CheckedState.Parent = this.btnSave;
+            this.btnSave.CustomImages.Parent = this.btnSave;
+            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(137)))), ((int)(((byte)(210)))));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.btnSave.HoverState.Parent = this.btnSave;
+            this.btnSave.Location = new System.Drawing.Point(978, 89);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.ShadowDecoration.Parent = this.btnSave;
+            this.btnSave.Size = new System.Drawing.Size(150, 25);
+            this.btnSave.TabIndex = 20;
+            this.btnSave.Text = "Rey Yazmaq";
+            this.btnSave.Visible = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::WindowsFormsApp7.Properties.Resources.close_window_26px;
+            this.pictureBox2.Location = new System.Drawing.Point(991, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::WindowsFormsApp7.Properties.Resources.comments_24px;
+            this.pictureBox1.Location = new System.Drawing.Point(1096, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Diamond3
+            // 
+            this.Diamond3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Diamond3.Image = global::WindowsFormsApp7.Properties.Resources.blackDiamond;
+            this.Diamond3.Location = new System.Drawing.Point(955, 17);
+            this.Diamond3.Name = "Diamond3";
+            this.Diamond3.Size = new System.Drawing.Size(30, 30);
+            this.Diamond3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Diamond3.TabIndex = 26;
+            this.Diamond3.TabStop = false;
+            this.Diamond3.Click += new System.EventHandler(this.Diamond3_Click);
+            // 
+            // Diamond2
+            // 
+            this.Diamond2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Diamond2.Image = global::WindowsFormsApp7.Properties.Resources.blackDiamond;
+            this.Diamond2.Location = new System.Drawing.Point(919, 17);
+            this.Diamond2.Name = "Diamond2";
+            this.Diamond2.Size = new System.Drawing.Size(30, 30);
+            this.Diamond2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Diamond2.TabIndex = 25;
+            this.Diamond2.TabStop = false;
+            this.Diamond2.Click += new System.EventHandler(this.Diamond2_Click);
+            // 
+            // Diamond1
+            // 
+            this.Diamond1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Diamond1.Image = global::WindowsFormsApp7.Properties.Resources.blackDiamond;
+            this.Diamond1.Location = new System.Drawing.Point(883, 17);
+            this.Diamond1.Name = "Diamond1";
+            this.Diamond1.Size = new System.Drawing.Size(30, 30);
+            this.Diamond1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Diamond1.TabIndex = 17;
+            this.Diamond1.TabStop = false;
+            this.Diamond1.Click += new System.EventHandler(this.Diamond1_Click);
             // 
             // guna2RadioButton2
             // 
@@ -270,6 +396,18 @@ namespace WindowsFormsApp7
             this.lblEnteredMystat.TabIndex = 19;
             this.lblEnteredMystat.Text = "Entered my stat";
             // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::WindowsFormsApp7.Properties.Resources.user30;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(26, 13);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.guna2CirclePictureBox1.TabIndex = 18;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
             // lblCounter
             // 
             this.lblCounter.AutoSize = true;
@@ -292,130 +430,6 @@ namespace WindowsFormsApp7
             this.lblName.Text = "Name Surname";
             this.lblName.Click += new System.EventHandler(this.label12_Click);
             // 
-            // lblRey
-            // 
-            this.lblRey.AutoSize = true;
-            this.lblRey.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRey.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblRey.Location = new System.Drawing.Point(975, -1);
-            this.lblRey.Name = "lblRey";
-            this.lblRey.Size = new System.Drawing.Size(33, 15);
-            this.lblRey.TabIndex = 28;
-            this.lblRey.Text = "Rey";
-            this.lblRey.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::WindowsFormsApp7.Properties.Resources.comments_24px;
-            this.pictureBox1.Location = new System.Drawing.Point(1096, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::WindowsFormsApp7.Properties.Resources.close_window_26px;
-            this.pictureBox2.Location = new System.Drawing.Point(991, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // Diamond3
-            // 
-            this.Diamond3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Diamond3.Image = global::WindowsFormsApp7.Properties.Resources.blackDiamond;
-            this.Diamond3.Location = new System.Drawing.Point(955, 17);
-            this.Diamond3.Name = "Diamond3";
-            this.Diamond3.Size = new System.Drawing.Size(30, 30);
-            this.Diamond3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Diamond3.TabIndex = 26;
-            this.Diamond3.TabStop = false;
-            this.Diamond3.Click += new System.EventHandler(this.Diamond3_Click);
-            // 
-            // Diamond2
-            // 
-            this.Diamond2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Diamond2.Image = global::WindowsFormsApp7.Properties.Resources.blackDiamond;
-            this.Diamond2.Location = new System.Drawing.Point(919, 17);
-            this.Diamond2.Name = "Diamond2";
-            this.Diamond2.Size = new System.Drawing.Size(30, 30);
-            this.Diamond2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Diamond2.TabIndex = 25;
-            this.Diamond2.TabStop = false;
-            this.Diamond2.Click += new System.EventHandler(this.Diamond2_Click);
-            // 
-            // Diamond1
-            // 
-            this.Diamond1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Diamond1.Image = global::WindowsFormsApp7.Properties.Resources.blackDiamond;
-            this.Diamond1.Location = new System.Drawing.Point(883, 17);
-            this.Diamond1.Name = "Diamond1";
-            this.Diamond1.Size = new System.Drawing.Size(30, 30);
-            this.Diamond1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Diamond1.TabIndex = 17;
-            this.Diamond1.TabStop = false;
-            this.Diamond1.Click += new System.EventHandler(this.Diamond1_Click);
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::WindowsFormsApp7.Properties.Resources.user30;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(26, 13);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.guna2CirclePictureBox1.TabIndex = 18;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Animated = true;
-            this.btnCancel.BorderRadius = 12;
-            this.btnCancel.CheckedState.Parent = this.btnCancel;
-            this.btnCancel.CustomImages.Parent = this.btnCancel;
-            this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(137)))), ((int)(((byte)(210)))));
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.btnCancel.HoverState.Parent = this.btnCancel;
-            this.btnCancel.Location = new System.Drawing.Point(1134, 86);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
-            this.btnCancel.Size = new System.Drawing.Size(136, 28);
-            this.btnCancel.TabIndex = 21;
-            this.btnCancel.Text = "Imtina Etmek";
-            this.btnCancel.Visible = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Animated = true;
-            this.btnSave.BorderRadius = 12;
-            this.btnSave.CheckedState.Parent = this.btnSave;
-            this.btnSave.CustomImages.Parent = this.btnSave;
-            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(137)))), ((int)(((byte)(210)))));
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.btnSave.HoverState.Parent = this.btnSave;
-            this.btnSave.Location = new System.Drawing.Point(978, 89);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            this.btnSave.Size = new System.Drawing.Size(150, 25);
-            this.btnSave.TabIndex = 20;
-            this.btnSave.Text = "Rey Yazmaq";
-            this.btnSave.Visible = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // txtComment
             // 
             this.txtComment.Animated = true;
@@ -433,7 +447,6 @@ namespace WindowsFormsApp7
             this.txtComment.HoverState.Parent = this.txtComment;
             this.txtComment.Location = new System.Drawing.Point(978, 13);
             this.txtComment.Margin = new System.Windows.Forms.Padding(4);
-            this.txtComment.MaxLength = 80;
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.PasswordChar = '\0';
@@ -444,21 +457,6 @@ namespace WindowsFormsApp7
             this.txtComment.Size = new System.Drawing.Size(292, 69);
             this.txtComment.TabIndex = 30;
             this.txtComment.Visible = false;
-            // 
-            // lblDateTime
-            // 
-            this.lblDateTime.AutoSize = true;
-            this.lblDateTime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblDateTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.lblDateTime.Location = new System.Drawing.Point(1022, 0);
-            this.lblDateTime.Name = "lblDateTime";
-            this.lblDateTime.Size = new System.Drawing.Size(71, 20);
-            this.lblDateTime.TabIndex = 31;
-            this.lblDateTime.Text = "04/08/21";
-            this.lblDateTime.Visible = false;
-            this.lblDateTime.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // UserControl1
             // 
@@ -471,8 +469,8 @@ namespace WindowsFormsApp7
             this.Click += new System.EventHandler(this.UserControl1_Click);
             this.UserPanel.ResumeLayout(false);
             this.UserPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond1)).EndInit();

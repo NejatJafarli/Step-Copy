@@ -259,11 +259,6 @@ namespace WindowsFormsApp7
             btnSave.Visible = true;
             btnCancel.Visible = true;
         }
-        //978, 13
-        //292, 69
-
-        //1021, 13
-        //249, 35
         private void btnCancel_Click(object sender, EventArgs e)
         {
 
@@ -297,6 +292,8 @@ namespace WindowsFormsApp7
             }
             else
             {
+                var temp = DateTime.Now;
+                lblDateTime.Text = $"{temp.Day}/{temp.Month}/{temp.Year}";
                 lblDateTime.Visible = true;
                 pictureBox1.Visible = false;
                 txtComment.Visible = true;
@@ -308,7 +305,22 @@ namespace WindowsFormsApp7
 
             }
         }
-        private void btnSave_Click(object sender, EventArgs e)
+        public int SaveRadioButtonStepOne()
+        {
+            int radiobutton = 0;
+            if (RadioButtonRed.Checked) radiobutton = 1;
+            if (guna2RadioButton2.Checked) radiobutton = 2;
+            if (guna2RadioButton3.Checked) radiobutton = 3;
+
+            return radiobutton;
+        }
+        public void SaveRadioButtonStepTwo(int radiobutton)
+        {
+            if (radiobutton == 1) RadioButtonRed.Checked = true;
+            if (radiobutton == 2) guna2RadioButton2.Checked = true;
+            if (radiobutton == 3) guna2RadioButton3.Checked = true;
+        }
+        public void btnSave_Click(object sender, EventArgs e)
         {
             Size = new Size(this.Size.Width, this.Size.Height - 54);
             UserPanel.Size = this.Size;
@@ -323,9 +335,12 @@ namespace WindowsFormsApp7
             Diamond3.Location = new Point(Diamond3.Location.X + 50, Diamond3.Location.Y);
 
             pictureBox2.Location = new Point(pictureBox2.Location.X + 50, pictureBox2.Location.Y);
-
+            var RadioButton = SaveRadioButtonStepOne();
             lblRey.Visible = false;
             btnSave.Visible = false;
+
+            SaveRadioButtonStepTwo(RadioButton);
+
             btnCancel.Visible = false;
             if (string.IsNullOrWhiteSpace(txtComment.Text))
             {
@@ -338,6 +353,8 @@ namespace WindowsFormsApp7
             }
             else
             {
+                var temp = DateTime.Now;
+                lblDateTime.Text = $"{temp.Day}/{temp.Month}/{temp.Year}";
                 lblDateTime.Visible = true;
                 lblDateTime.BringToFront();
                 pictureBox1.Visible = false;
